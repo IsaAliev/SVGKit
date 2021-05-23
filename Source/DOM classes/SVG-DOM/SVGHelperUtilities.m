@@ -289,6 +289,7 @@
 {
 	layer.name = nonStylableElement.identifier;
 	[layer setValue:nonStylableElement.identifier forKey:kSVGElementIdentifier];
+    [layer setValue:nonStylableElement forKey:@"svgElement"];
 	
 #if FORCE_RASTERIZE_LAYERS
 	if ([layer respondsToSelector:@selector(setShouldRasterize:)]) {
